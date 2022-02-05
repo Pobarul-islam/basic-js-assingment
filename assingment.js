@@ -4,16 +4,16 @@ function anaToVori(ana) {
     let convert = ana / 16;
     return convert;
 }
-var myAna = 120;
+var myAna = 55;
 var vori = anaToVori(myAna)
 console.log(vori);
- */
-
+ 
+ 
 
 
 
 // Problem -2
-/* 
+
 function pandaCost(singara, samucha, zilapi) {
     const perSingara = 7;
     const perSamucha = 10;
@@ -28,14 +28,14 @@ function pandaCost(singara, samucha, zilapi) {
 
 const firstOption = pandaCost(0, 0, 2);
 console.log(firstOption);
- */
+ 
 
 
 
 
 // Problem -3
 
-/* 
+
 function picnicBudget(hundedPeopleBudget) {
     const firstHundedPeople = 5000;
     const secondHundedPeople = 4000;
@@ -68,13 +68,26 @@ function picnicBudget(hundedPeopleBudget) {
 let result = picnicBudget(205);
 console.log(result)  
 
-
- 
-
  */
 
 
 
 
+// Problem -4
 
+function oddFriend(names) {
+    let friends = '';
+    for (let i = 0; i < names.length; i++){
+        let element = friendsName[i];
+        if (element.length % 2 == 1) {
+            friends = element;
+            break;
+        }
+        
+    }
+    return friends;
+}
+
+let friendsName = ['abul','mmm', 'kabul',  'moyna', 'samim', 'alamin'];
+console.log(oddFriend(friendsName))
 
